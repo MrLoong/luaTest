@@ -1,4 +1,8 @@
-
+---
+title: 利用Lua实现App动态化方案
+categories:
+- iOS
+---
 
 * 大家好，我叫LastDays，大三学生，目前在腾讯实习，这是我的[Blog](lastdays.cn)，我在这里分享我的学习，
 * 我的[微博](http://weibo.com/p/1005055848341536/home?from=page_100505&mod=TAB&is_all=1#place)我在这里分享我的生活，欢迎交流
@@ -18,6 +22,8 @@
 最近看到很多场对动态化提出了很多技术方案，原因就是客户端的业务需求越来越复杂，尤其是一些业务快速发展的互联网产品，肯定会造成版本的更新迭代跟不上业务的变化，尤其是App Store不确定性的审核，这个时候动态化的想法就自然的产生了。我不知道其他人是如何理解动态化的，但是我觉得，动态化指的就是我们不发布新的版本就可以实现大量的应用内容更新，这里的内容不应该仅仅是一些基本信息，应该涉及到应用的主题框架，甚至是布局，排版等。
 
 因为我自己主要专注iOS，所以本次的源码分析和实现主要围绕iOS进行。
+
+<!-- more -->
 
 
 ## App的设计方案
@@ -214,7 +220,7 @@ button3.callback(
 
 效果图：
 
-![](image/Luaview/2.gif)
+![](image/LuaView/2.gif)
 
 可以看到调用的原生UI。
 
@@ -605,7 +611,7 @@ LuaViewSDK 可以通过 Lua 脚本桥接所有 Native 的功能，所以具有�
 
 这里看在聚划算团队分享的LuaView SDK整体架构
 
-![](image/Luaview/3.jpg)
+![](image/LuaView/3.jpg)
 
 如图，以下为聚划算团队说明LuaView SDK的整体架构可以表示为五层。
 
@@ -792,7 +798,7 @@ label = Label();
 
 来看下效果：
 
-![](image/luaView/4.gif)
+![](image/LuaView/4.gif)
 
 
 
