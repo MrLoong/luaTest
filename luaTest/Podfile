@@ -1,0 +1,6 @@
+target "luaTest" do
+
+pod 'AFNetworking', '~> 3.0'
+pod 'LuaViewSDK', :git => 'https://github.com/alibaba/LuaViewSDK.git'
+
+end
